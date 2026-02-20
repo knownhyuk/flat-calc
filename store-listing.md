@@ -1,7 +1,7 @@
 # Google Play Store 등록정보
 
 ## 기본 정보
-- **패키지명**: com.flatcalc.pyeong
+- **패키지명**: com.ezcalc.pyeong
 - **기본 언어**: 한국어 (ko-KR)
 - **카테고리**: 도구 (Tools)
 - **무료/유료**: 무료 (광고 포함)
@@ -117,10 +117,6 @@ Google AdMob은 광고 제공을 위해 기기 식별자(광고 ID) 등의 정�
 ## AAB 파일 위치
 android/app/build/outputs/bundle/release/app-release.aab
 
-## Keystore 정보 (보관 필수!)
-- 파일: android/app/release.keystore
-- Alias: [REMOVED]
-- Store Password: [REMOVED]
-- Key Password: [REMOVED]
-- 유효기간: 약 27년
+## Keystore 정보
+※ Keystore 비밀번호 등 민감정보는 별도 안전한 곳에 보관하세요.
 ※ Keystore를 분실하면 앱 업데이트가 불가능합니다. 반드시 백업하세요!
