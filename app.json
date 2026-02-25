@@ -2,7 +2,7 @@
   "expo": {
     "name": "평수계산기",
     "slug": "flat-calc",
-    "version": "1.0.0",
+    "version": "1.0.3",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -19,7 +19,7 @@
         "backgroundColor": "#FFFFFF"
       },
       "edgeToEdgeEnabled": true,
-      "package": "com.kwonhyuk.flatcalc"
+      "package": "com.ezcalc.pyeong"
     },
     "web": {
       "favicon": "./assets/favicon.png"

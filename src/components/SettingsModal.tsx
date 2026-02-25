@@ -81,9 +81,9 @@ export default function SettingsModal({
             </View>
 
             {/* 시작 탭 */}
-            <Text style={[styles.sectionLabel, { marginTop: spacing.xl }]}>시작 탭</Text>
+            <Text style={[styles.sectionLabel, { marginTop: spacing.lg }]}>시작 탭</Text>
             <Text style={styles.sectionDesc}>앱 실행 시 처음 표시되는 탭</Text>
-            <View style={[styles.optionGroup, { paddingBottom: 20 }]}>
+            <View style={styles.optionGroup}>
               {TAB_OPTIONS.map((opt) => (
                 <Pressable
                   key={opt.value}
@@ -122,23 +122,20 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: 'rgba(0,0,0,0.35)',
     justifyContent: 'center',
-    paddingTop: 60,
-    paddingBottom: 120,
   },
   sheet: {
     backgroundColor: colors.background,
     borderRadius: borderRadius.xl,
-    marginHorizontal: spacing.xl,
-    paddingHorizontal: spacing.xl,
-    paddingTop: spacing.lg,
-    paddingBottom: 30,
-    maxHeight: '85%',
+    marginHorizontal: spacing.lg,
+    paddingHorizontal: spacing.lg,
+    paddingTop: spacing.md,
+    paddingBottom: spacing.lg,
   },
   header: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginBottom: spacing.xl,
+    marginBottom: spacing.md,
   },
   title: {
     fontSize: 18,
@@ -166,16 +163,16 @@ const styles = StyleSheet.create({
     fontSize: 12,
     color: colors.textDim,
     marginTop: 2,
-    marginBottom: spacing.md,
+    marginBottom: spacing.sm,
   },
   optionGroup: {
-    gap: spacing.sm,
+    gap: 6,
   },
   option: {
     flexDirection: 'row',
     alignItems: 'center',
-    paddingVertical: spacing.md,
-    paddingHorizontal: spacing.lg,
+    paddingVertical: spacing.sm,
+    paddingHorizontal: spacing.md,
     backgroundColor: colors.surface,
     borderRadius: borderRadius.md,
     borderWidth: 1.5,
@@ -186,22 +183,22 @@ const styles = StyleSheet.create({
     borderColor: colors.accent,
   },
   radio: {
-    width: 20,
-    height: 20,
-    borderRadius: 10,
+    width: 18,
+    height: 18,
+    borderRadius: 9,
     borderWidth: 2,
     borderColor: colors.border,
     alignItems: 'center',
     justifyContent: 'center',
-    marginRight: spacing.md,
+    marginRight: spacing.sm,
   },
   radioActive: {
     borderColor: colors.accent,
   },
   radioDot: {
-    width: 10,
-    height: 10,
-    borderRadius: 5,
+    width: 9,
+    height: 9,
+    borderRadius: 4.5,
     backgroundColor: colors.accent,
   },
   optionText: {
