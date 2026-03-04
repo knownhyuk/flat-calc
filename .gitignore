@@ -45,5 +45,9 @@ yarn-error.*
 *.aab
 *.keystore
 
+# keystore signing secrets
+key.properties
+android/key.properties
+
 # claude
 .claude/

@@ -1,12 +1,17 @@
 {
   "name": "flat-calc",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "main": "index.ts",
   "scripts": {
     "start": "expo start",
     "android": "expo run:android",
     "ios": "expo run:ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "prebuild:guard": "bash scripts/pre-build-guard.sh",
+    "build:aab": "bash scripts/pre-build-guard.sh && cd android && ./gradlew bundleRelease",
+    "build:apk": "bash scripts/pre-build-guard.sh && cd android && ./gradlew assembleRelease",
+    "keystore:verify": "bash scripts/verify-keystore.sh",
+    "keystore:protect": "bash scripts/protect-keystore.sh"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "2.2.0",
